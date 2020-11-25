@@ -1,0 +1,1 @@
+arp,dl_vlan=12,arp_tpa=192.168.111.111 actions=set_field:2->arp_op,move:NXM_NX_ARP_SHA[]->NXM_NX_ARP_THA[],move:NXM_OF_ARP_SPA[]->NXM_OF_ARP_TPA[],set_field:fa:16:3e:c7:a9:a9->arp_sha,set_field:192.168.111.111->arp_spa,move:NXM_OF_ETH_SRC[]->NXM_OF_ETH_DST[],set_field:fa:16:3e:c7:a9:a9->eth_src,IN_PORT
